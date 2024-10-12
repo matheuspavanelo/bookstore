@@ -15,5 +15,6 @@ class OrderSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ["product", "total", "user", "products_id"]
+        fields = ["product", "total", "user"]  # Remova "products_id"
+
         
